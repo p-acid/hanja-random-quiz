@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Noto_Sans_KR } from "next/font/google";
 
-import { SERVICE_METADATA } from "@/constants/service";
+import { CANONICAL_URL, SERVICE_METADATA } from "@/constants/service";
 import { MainLayout } from "@/layouts/main-layout";
 
 import "./globals.css";
@@ -14,6 +14,7 @@ const notoSansKr = Noto_Sans_KR({
 export const metadata: Metadata = {
   title: SERVICE_METADATA.TITLE,
   description: SERVICE_METADATA.DESCRIPTION,
+  metadataBase: new URL(CANONICAL_URL),
 };
 
 export default function RootLayout({
