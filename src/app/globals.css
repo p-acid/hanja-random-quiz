@@ -36,3 +36,7 @@
   --depth: 0;
   --noise: 0;
 }
+
+.btn-lg {
+  @apply h-[52px] text-base;
+}

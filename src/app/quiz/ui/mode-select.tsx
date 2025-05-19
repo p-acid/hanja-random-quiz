@@ -43,7 +43,7 @@ export function ModeSelect() {
         ))}
       </div>
 
-      <button className="btn w-full" onClick={startQuiz}>
+      <button className="btn btn-lg w-full" onClick={startQuiz}>
         시작하기
       </button>
     </div>

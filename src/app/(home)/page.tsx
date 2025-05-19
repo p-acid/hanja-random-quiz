@@ -4,8 +4,8 @@ import { PAGE_ROUTES } from "@/constants/page-routes";
 
 export default function Home() {
   return (
-    <main className="flex h-full w-full flex-col items-center justify-center gap-20 px-6">
-      <div className="flex w-full flex-col gap-5">
+    <main className="flex h-full w-full flex-col items-center justify-between gap-20 px-6 py-10">
+      <div className="flex h-full w-full flex-col justify-center gap-5">
         <div className="w-fit rounded-md bg-zinc-800 px-2 py-1 text-2xl font-black">
           漢
         </div>
@@ -16,8 +16,8 @@ export default function Home() {
           {"약 900개의 한자 단어를\n랜덤 퀴즈를 통해 외워보세요!"}
         </p>
       </div>
-      <Link href={PAGE_ROUTES.QUIZ} className="btn w-full">
-        시작하기
+      <Link href={PAGE_ROUTES.QUIZ} className="btn btn-lg w-full">
+        퀴즈 풀러가기
       </Link>
     </main>
   );
