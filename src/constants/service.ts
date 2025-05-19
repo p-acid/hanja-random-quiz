@@ -1,4 +1,4 @@
 export const SERVICE_METADATA = {
-  TITLE: "Hanja Random Quiz",
-  DESCRIPTION: "Memorize chinese characters by random quiz",
+  TITLE: "랜덤 한자 퀴즈",
+  DESCRIPTION: "랜덤 퀴즈를 통해 한자를 암기할 수 있는 서비스",
 };
