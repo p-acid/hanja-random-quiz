@@ -1,5 +1,9 @@
 import type { Metadata } from "next";
 import { Noto_Sans_KR } from "next/font/google";
+
+import { SERVICE_METADATA } from "@/constants/service";
+import { MainLayout } from "@/layouts/main-layout";
+
 import "./globals.css";
 
 const notoSansKr = Noto_Sans_KR({
@@ -8,8 +12,8 @@ const notoSansKr = Noto_Sans_KR({
 });
 
 export const metadata: Metadata = {
-  title: "CC Random Quiz",
-  description: "Memorize chinese characters by random quiz",
+  title: SERVICE_METADATA.TITLE,
+  description: SERVICE_METADATA.DESCRIPTION,
 };
 
 export default function RootLayout({
@@ -19,7 +23,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body className={`${notoSansKr.variable} antialiased`}>{children}</body>
+      <body className={`${notoSansKr.variable} antialiased`}>
+        <MainLayout>{children}</MainLayout>
+      </body>
     </html>
   );
 }
