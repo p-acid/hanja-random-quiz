@@ -4,7 +4,7 @@ import { PAGE_ROUTES } from "@/constants/page-routes";
 
 export default function ResultPage() {
   return (
-    <main className="flex h-full flex-col justify-between px-6 py-8">
+    <main className="flex h-full flex-col justify-between gap-5 px-6 py-8">
       <div className="flex flex-col gap-10">
         <div className="flex flex-col gap-1">
           <h1 className="text-2xl font-bold tracking-tighter">
