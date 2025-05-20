@@ -4,3 +4,9 @@ export type FourChoiceQuiz = {
   answer: string;
   submittedAnswer: string | null;
 };
+
+export type ShortAnswerQuiz = {
+  question: string;
+  answer: string;
+  submittedAnswer: string | null;
+};
