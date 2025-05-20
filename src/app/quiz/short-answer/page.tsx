@@ -37,6 +37,8 @@ export default function ShortAnswerPage() {
       return;
     }
 
+    inputRef.current.value = "";
+
     if (isAnswerRevealed) {
       setIsRevealed(true);
 
@@ -68,7 +70,7 @@ export default function ShortAnswerPage() {
               className={cn(
                 "font-semibold opacity-0 transition-opacity duration-200",
                 {
-                  "opacity-100": isRevealed,
+                  "!opacity-100": isRevealed,
                 },
               )}
             >
@@ -83,7 +85,11 @@ export default function ShortAnswerPage() {
               placeholder="정답을 입력해주세요"
               className="input-bordered input input-xl w-full px-4 text-lg"
             />
-            <button type="submit" className="btn btn-lg w-full">
+            <button
+              type="submit"
+              disabled={isRevealed}
+              className="btn btn-lg w-full"
+            >
               제출하기
             </button>
           </form>

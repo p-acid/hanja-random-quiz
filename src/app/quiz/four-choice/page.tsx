@@ -57,10 +57,12 @@ export default function FourChoicePage() {
             {currentQuiz?.options.map((choice, idx) => (
               <button
                 key={idx}
+                disabled={isRevealed}
                 className={cn(
                   "btn btn-xl border-base-300 h-16 w-full text-base transition-colors duration-200",
                   {
-                    "bg-success": isRevealed && choice === currentQuiz.answer,
+                    "!bg-success !text-base-content":
+                      isRevealed && choice === currentQuiz.answer,
                   },
                 )}
                 onClick={() => submitAnswer(choice)}
