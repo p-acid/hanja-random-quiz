@@ -4,7 +4,7 @@ import { PAGE_ROUTES } from "@/constants/page-routes";
 
 export default function Home() {
   return (
-    <main className="flex h-full w-full flex-col items-center justify-between gap-20 px-6 py-10">
+    <main className="flex h-full w-full flex-col items-center justify-between gap-20 px-6 pb-16">
       <div className="flex h-full w-full flex-col justify-center gap-5">
         <div className="w-fit rounded-md bg-zinc-800 px-2 py-1 text-2xl font-black">
           漢
