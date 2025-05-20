@@ -11,6 +11,7 @@ import { CHINESE_CHARACTERS } from "@/constants/chinese-characters";
 import { PAGE_ROUTES } from "@/constants/page-routes";
 import { FourChoiceQuiz } from "@/types/quiz";
 import { getFourChoiceQuiz } from "@/utils/get-four-choice-quiz";
+import { QuizView } from "@/components/quiz-view";
 
 export default function FourChoicePage() {
   const [currentQuiz, setCurrentQuiz] = useState<FourChoiceQuiz>();
@@ -46,6 +47,10 @@ export default function FourChoicePage() {
     }
   }, []);
 
+  useEffect(() => {
+    setSubmittedQuizzes([]);
+  }, [setSubmittedQuizzes]);
+
   return (
     <main className="h-full">
       <div className="flex h-18 flex-col">
@@ -71,9 +76,9 @@ export default function FourChoicePage() {
 
       <div className="flex flex-col gap-16 p-6">
         <div className="flex flex-col items-center gap-5">
-          <div className="bg-base-300 flex h-[240px] w-full items-center justify-center rounded-xl text-9xl">
-            {currentQuiz?.question}
-          </div>
+          <QuizView className="bg-base-300 flex h-[240px] w-full items-center justify-center rounded-xl">
+            <span className="text-9xl">{currentQuiz?.question}</span>
+          </QuizView>
           <div className="grid w-full grid-cols-2 gap-4">
             {currentQuiz?.options.map((choice, idx) => (
               <button
