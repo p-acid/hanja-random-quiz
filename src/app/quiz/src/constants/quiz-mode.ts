@@ -16,6 +16,6 @@ export const QUIZ_MODE_LIST = [
     icon: Type,
     mode: QUIZ_MODE.SHORT_ANSWER,
     title: "단답형 퀴즈",
-    description: "타이핑을 통해 정답을 입력하여 제출하세요",
+    description: "타이핑을 통해 정답을 입력하세요",
   },
 ];

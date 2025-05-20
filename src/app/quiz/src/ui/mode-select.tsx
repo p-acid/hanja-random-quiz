@@ -85,14 +85,11 @@ export function QuizModeOption({
         <Icon className="size-3.5" />
       </div>
       <div className="flex flex-col gap-0.5">
-        <h2 className="text-sm font-semibold">{title}</h2>
+        <p className="text-base font-semibold">{title}</p>
         <p
-          className={cn(
-            "text-sm text-zinc-400 transition-colors duration-200",
-            {
-              "text-base-content": isSelected,
-            },
-          )}
+          className={cn("text- text-zinc-400 transition-colors duration-200", {
+            "text-base-content": isSelected,
+          })}
         >
           {description}
         </p>
