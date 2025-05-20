@@ -38,13 +38,13 @@ export function FooterNav() {
   const pathname = usePathname();
 
   return (
-    <nav className="bg-base-200 border-base-300 text-base-content fixed bottom-0 left-1/2 flex h-16 w-full max-w-sm -translate-x-[50%] items-center justify-around rounded-t-2xl border-t pt-0.5">
+    <nav className="bg-base-200 border-base-300 text-base-content fixed bottom-0 left-1/2 flex h-18 w-full max-w-sm -translate-x-[50%] justify-around rounded-t-2xl border-t pt-2.5">
       {FOOTER_NAV_ITEMS.map(({ name, href, icon, matcher }) => (
         <Link
           key={name}
           href={href}
           className={cn(
-            "flex flex-col items-center justify-center gap-1.5 text-xs text-stone-400",
+            "flex h-fit flex-col items-center justify-center gap-1.5 text-xs text-stone-400",
             {
               "text-white": matcher(pathname),
             },
