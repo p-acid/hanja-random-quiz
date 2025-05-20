@@ -37,17 +37,8 @@ const FOOTER_NAV_ITEMS: {
 export function FooterNav() {
   const pathname = usePathname();
 
-  const isStandalone = window.matchMedia("(display-mode: standalone)").matches;
-
   return (
-    <nav
-      className={cn(
-        "bg-base-200 border-base-300 text-base-content fixed bottom-0 left-1/2 flex h-16 w-full max-w-sm -translate-x-[50%] justify-around rounded-t-2xl border-t pt-2.5",
-        {
-          "h-20": isStandalone,
-        },
-      )}
-    >
+    <nav className="bg-base-200 border-base-300 text-base-content fixed bottom-0 left-1/2 flex h-20 w-full max-w-sm -translate-x-[50%] justify-around rounded-t-2xl border-t pt-2.5">
       {FOOTER_NAV_ITEMS.map(({ name, href, icon, matcher }) => (
         <Link
           key={name}
