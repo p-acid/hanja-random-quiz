@@ -6,6 +6,7 @@ import { MainLayout } from "@/layouts/main-layout";
 
 import "./globals.css";
 import { Providers } from "@/providers";
+import { Suspense } from "react";
 
 const notoSansKr = Noto_Sans_KR({
   variable: "--font-noto-sans-kr",
@@ -26,9 +27,11 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body className={`${notoSansKr.variable} antialiased`}>
-        <Providers>
-          <MainLayout>{children}</MainLayout>
-        </Providers>
+        <Suspense>
+          <Providers>
+            <MainLayout>{children}</MainLayout>
+          </Providers>
+        </Suspense>
       </body>
     </html>
   );
