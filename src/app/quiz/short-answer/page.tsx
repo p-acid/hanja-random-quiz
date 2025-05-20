@@ -1,64 +1,59 @@
 "use client";
 
-import { useAtom } from "jotai";
 import { useRouter } from "next/navigation";
-import { FormEvent, useEffect, useRef, useState } from "react";
+import { FormEvent, useRef, useState } from "react";
 
-import { submittedQuizzesAtom } from "@/atoms/submitted-quizzes";
 import { QuizView } from "@/components/quiz-view";
 import { CHINESE_CHARACTERS } from "@/constants/chinese-characters";
 import { PAGE_ROUTES } from "@/constants/page-routes";
 import { QuizLayout } from "@/layouts/quiz-layout";
-import { ShortAnswerQuiz } from "@/types/quiz";
+
 import { getShortAnswerQuiz } from "@/utils/get-short-answer-quiz";
+import useQuizOptions from "@/hooks/use-quiz-options";
+import { cn } from "@/utils/cn";
+import useQuizAnswers from "@/hooks/use-quiz-answers";
 
 export default function ShortAnswerPage() {
   const inputRef = useRef<HTMLInputElement>(null);
 
-  const [currentQuiz, setCurrentQuiz] = useState<ShortAnswerQuiz>();
-
-  const [submittedQuizzes, setSubmittedQuizzes] = useAtom(submittedQuizzesAtom);
+  const [isRevealed, setIsRevealed] = useState(false);
 
   const { push } = useRouter();
+
+  const { isAnswerRevealed } = useQuizOptions();
+  const { currentQuiz, submittedQuizzes, updateQuiz } = useQuizAnswers({
+    generateQuiz: getShortAnswerQuiz,
+  });
 
   const submitAnswer = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
-    if (!currentQuiz) return;
+    if (!currentQuiz || !inputRef.current) return;
 
-    if (!inputRef.current) return;
+    const inputValue = inputRef.current.value;
 
     if (inputRef.current.value === "") {
       alert("정답을 입력해주세요");
       return;
     }
 
-    setSubmittedQuizzes((prev) => [
-      ...prev,
-      {
-        answer: { word: currentQuiz.question, reading: currentQuiz.answer },
-        submittedAnswer: inputRef.current?.value ?? "",
-      },
-    ]);
+    if (isAnswerRevealed) {
+      setIsRevealed(true);
 
-    setCurrentQuiz(
-      getShortAnswerQuiz([...submittedQuizzes.map((quiz) => quiz.answer.word)]),
-    );
+      setTimeout(() => {
+        updateQuiz(inputValue);
+        setIsRevealed(false);
+      }, 1000);
 
-    inputRef.current.value = "";
+      return;
+    }
+
+    updateQuiz(inputValue);
   };
 
   const submitResult = () => {
     push(PAGE_ROUTES.QUIZ_RESULT);
   };
-
-  useEffect(() => {
-    setCurrentQuiz(getShortAnswerQuiz());
-  }, []);
-
-  useEffect(() => {
-    setSubmittedQuizzes([]);
-  }, [setSubmittedQuizzes]);
 
   return (
     <QuizLayout
@@ -67,8 +62,18 @@ export default function ShortAnswerPage() {
     >
       <div className="flex flex-col gap-16 p-6">
         <div className="flex flex-col gap-6">
-          <QuizView>
+          <QuizView className="flex-col gap-5 text-xl">
             <span className="text-9xl">{currentQuiz?.question}</span>
+            <span
+              className={cn(
+                "font-semibold opacity-0 transition-opacity duration-200",
+                {
+                  "opacity-100": isRevealed,
+                },
+              )}
+            >
+              {isRevealed ? currentQuiz?.answer : ""}
+            </span>
           </QuizView>
           <form className="flex flex-col gap-3" onSubmit={submitAnswer}>
             <input

@@ -1,12 +1,13 @@
-export type FourChoiceQuiz = {
+export interface QuizCommon {
   question: string;
-  options: string[];
   answer: string;
-  submittedAnswer: string | null;
-};
+}
 
-export type ShortAnswerQuiz = {
-  question: string;
-  answer: string;
+export interface FourChoiceQuiz extends QuizCommon {
+  options: string[];
   submittedAnswer: string | null;
-};
+}
+
+export interface ShortAnswerQuiz extends QuizCommon {
+  submittedAnswer: string | null;
+}

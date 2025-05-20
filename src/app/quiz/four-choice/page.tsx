@@ -1,54 +1,47 @@
 "use client";
 
-import { useAtom } from "jotai";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useRouter } from "next/navigation";
 
-import { submittedQuizzesAtom } from "@/atoms/submitted-quizzes";
 import { CHINESE_CHARACTERS } from "@/constants/chinese-characters";
 import { PAGE_ROUTES } from "@/constants/page-routes";
-import { FourChoiceQuiz } from "@/types/quiz";
 import { getFourChoiceQuiz } from "@/utils/get-four-choice-quiz";
 import { QuizView } from "@/components/quiz-view";
 import { QuizLayout } from "@/layouts/quiz-layout";
+import { cn } from "@/utils/cn";
+import useQuizOptions from "@/hooks/use-quiz-options";
+import useQuizAnswers from "@/hooks/use-quiz-answers";
 
 export default function FourChoicePage() {
-  const [currentQuiz, setCurrentQuiz] = useState<FourChoiceQuiz>();
+  const [isRevealed, setIsRevealed] = useState(false);
 
   const { push } = useRouter();
 
-  const [submittedQuizzes, setSubmittedQuizzes] = useAtom(submittedQuizzesAtom);
+  const { currentQuiz, submittedQuizzes, updateQuiz } = useQuizAnswers({
+    generateQuiz: getFourChoiceQuiz,
+  });
+  const { isAnswerRevealed } = useQuizOptions();
 
   const submitAnswer = (submittedAnswer: string) => {
     if (!currentQuiz) return;
 
-    setSubmittedQuizzes((prev) => [
-      ...prev,
-      {
-        answer: { word: currentQuiz.question, reading: currentQuiz.answer },
-        submittedAnswer,
-      },
-    ]);
+    if (isAnswerRevealed) {
+      setIsRevealed(true);
 
-    setCurrentQuiz(
-      getFourChoiceQuiz([...submittedQuizzes.map((quiz) => quiz.answer.word)]),
-    );
+      setTimeout(() => {
+        updateQuiz(submittedAnswer);
+        setIsRevealed(false);
+      }, 1000);
+
+      return;
+    }
+
+    updateQuiz(submittedAnswer);
   };
 
   const submitResult = () => {
     push(PAGE_ROUTES.QUIZ_RESULT);
   };
-
-  useEffect(() => {
-    const newQuiz = getFourChoiceQuiz();
-    if (newQuiz) {
-      setCurrentQuiz(newQuiz);
-    }
-  }, []);
-
-  useEffect(() => {
-    setSubmittedQuizzes([]);
-  }, [setSubmittedQuizzes]);
 
   return (
     <QuizLayout
@@ -64,7 +57,12 @@ export default function FourChoicePage() {
             {currentQuiz?.options.map((choice, idx) => (
               <button
                 key={idx}
-                className="btn btn-xl h-16 w-full text-base"
+                className={cn(
+                  "btn btn-xl border-base-300 h-16 w-full text-base transition-colors duration-200",
+                  {
+                    "bg-success": isRevealed && choice === currentQuiz.answer,
+                  },
+                )}
                 onClick={() => submitAnswer(choice)}
               >
                 {choice}
