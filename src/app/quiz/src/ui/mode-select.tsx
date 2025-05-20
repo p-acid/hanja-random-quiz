@@ -95,7 +95,7 @@ export function QuizModeOption({
       <div className="flex flex-col gap-0.5">
         <p className="text-base font-semibold">{title}</p>
         <p
-          className={cn("text- text-zinc-400 transition-colors duration-200", {
+          className={cn("text- text-stone-400 transition-colors duration-200", {
             "text-base-content": isSelected,
           })}
         >

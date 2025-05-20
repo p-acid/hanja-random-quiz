@@ -25,8 +25,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko">
-      <body className={`${notoSansKr.variable} antialiased`}>
+    <html lang="ko" className="h-full">
+      <body className={`${notoSansKr.variable} bg-base-100 h-full antialiased`}>
         <Suspense>
           <Providers>
             <MainLayout>{children}</MainLayout>

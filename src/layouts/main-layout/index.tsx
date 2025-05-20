@@ -1,9 +1,13 @@
 import { PropsWithChildren } from "react";
+import { FooterNav } from "./footer-nav";
 
 export function MainLayout({ children }: PropsWithChildren) {
   return (
-    <div className="bg-base-100 flex h-full min-h-[100dvh] w-full justify-center">
-      <div className="w-full max-w-sm">{children}</div>
+    <div className="mx-auto h-full w-full max-w-sm">
+      <div className="scrollbar-hidden h-[calc(100dvh-4rem)] overflow-scroll">
+        {children}
+      </div>
+      <FooterNav />
     </div>
   );
 }

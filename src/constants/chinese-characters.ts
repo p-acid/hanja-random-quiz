@@ -100,10 +100,6 @@ export const CHINESE_CHARACTERS = [
     reading: "마루 종",
   },
   {
-    word: "敎",
-    reading: "가르칠 교",
-  },
-  {
     word: "語",
     reading: "말씀 어",
   },
@@ -122,10 +118,6 @@ export const CHINESE_CHARACTERS = [
   {
     word: "領",
     reading: "거느릴 영",
-  },
-  {
-    word: "域",
-    reading: "지경 역",
   },
   {
     word: "確",
@@ -228,14 +220,6 @@ export const CHINESE_CHARACTERS = [
     reading: "모일 사",
   },
   {
-    word: "會",
-    reading: "모일 회",
-  },
-  {
-    word: "經",
-    reading: "지날 경",
-  },
-  {
     word: "濟",
     reading: "건널 제",
   },
@@ -278,10 +262,6 @@ export const CHINESE_CHARACTERS = [
   {
     word: "際",
     reading: "즈음 제",
-  },
-  {
-    word: "成",
-    reading: "이룰 성",
   },
   {
     word: "長",
@@ -328,10 +308,6 @@ export const CHINESE_CHARACTERS = [
     reading: "으뜸 원",
   },
   {
-    word: "發",
-    reading: "필 발",
-  },
-  {
     word: "展",
     reading: "펼 전",
   },
@@ -362,10 +338,6 @@ export const CHINESE_CHARACTERS = [
   {
     word: "漸",
     reading: "점점 점",
-  },
-  {
-    word: "次",
-    reading: "버금 차",
   },
   {
     word: "自",
@@ -412,16 +384,8 @@ export const CHINESE_CHARACTERS = [
     reading: "부처 불",
   },
   {
-    word: "敎",
-    reading: "가르칠 교",
-  },
-  {
     word: "儒",
     reading: "선비 유",
-  },
-  {
-    word: "敎",
-    reading: "가르칠 교",
   },
   {
     word: "名",
@@ -460,10 +424,6 @@ export const CHINESE_CHARACTERS = [
     reading: "사이 간",
   },
   {
-    word: "接",
-    reading: "이을 접",
-  },
-  {
     word: "招",
     reading: "부를 초",
   },
@@ -492,16 +452,8 @@ export const CHINESE_CHARACTERS = [
     reading: "다 함",
   },
   {
-    word: "精",
-    reading: "정할 정",
-  },
-  {
     word: "神",
     reading: "귀신 신",
-  },
-  {
-    word: "分",
-    reading: "나눌 분",
   },
   {
     word: "類",
@@ -510,10 +462,6 @@ export const CHINESE_CHARACTERS = [
   {
     word: "職",
     reading: "직분 직",
-  },
-  {
-    word: "場",
-    reading: "마당 장",
   },
   {
     word: "識",
@@ -528,10 +476,6 @@ export const CHINESE_CHARACTERS = [
     reading: "맡을 사",
   },
   {
-    word: "部",
-    reading: "떼 부",
-  },
-  {
     word: "下",
     reading: "아래 하",
   },
@@ -540,20 +484,12 @@ export const CHINESE_CHARACTERS = [
     reading: "모양 자",
   },
   {
-    word: "勢",
-    reading: "형세 세",
-  },
-  {
     word: "側",
     reading: "곁 측",
   },
   {
     word: "面",
     reading: "낯 면",
-  },
-  {
-    word: "組",
-    reading: "짤 조",
   },
   {
     word: "織",
@@ -594,10 +530,6 @@ export const CHINESE_CHARACTERS = [
   {
     word: "綜",
     reading: "모을 종",
-  },
-  {
-    word: "合",
-    reading: "합할 합",
   },
   {
     word: "正",
@@ -720,10 +652,6 @@ export const CHINESE_CHARACTERS = [
     reading: "착할 선",
   },
   {
-    word: "觀",
-    reading: "볼 관",
-  },
-  {
     word: "點",
     reading: "점 점",
   },
@@ -760,16 +688,8 @@ export const CHINESE_CHARACTERS = [
     reading: "무리 당",
   },
   {
-    word: "政",
-    reading: "정사 정",
-  },
-  {
     word: "府",
     reading: "마을 부",
-  },
-  {
-    word: "政",
-    reading: "정사 정",
   },
   {
     word: "策",
@@ -808,10 +728,6 @@ export const CHINESE_CHARACTERS = [
     reading: "말미암을 유",
   },
   {
-    word: "和",
-    reading: "화할 화",
-  },
-  {
     word: "暢",
     reading: "화창할 창",
   },
@@ -822,10 +738,6 @@ export const CHINESE_CHARACTERS = [
   {
     word: "步",
     reading: "걸음 보",
-  },
-  {
-    word: "神",
-    reading: "귀신 신",
   },
   {
     word: "話",
@@ -864,20 +776,12 @@ export const CHINESE_CHARACTERS = [
     reading: "사람 인",
   },
   {
-    word: "接",
-    reading: "이을 접",
-  },
-  {
     word: "近",
     reading: "가까울 근",
   },
   {
     word: "氣",
     reading: "기운 기",
-  },
-  {
-    word: "勢",
-    reading: "형세 세",
   },
   {
     word: "突",
@@ -894,10 +798,6 @@ export const CHINESE_CHARACTERS = [
   {
     word: "—",
     reading: "한 일",
-  },
-  {
-    word: "段",
-    reading: "층계 단",
   },
   {
     word: "階",
@@ -918,10 +818,6 @@ export const CHINESE_CHARACTERS = [
   {
     word: "慮",
     reading: "생각할 려",
-  },
-  {
-    word: "確",
-    reading: "굳을 확",
   },
   {
     word: "固",
@@ -952,14 +848,6 @@ export const CHINESE_CHARACTERS = [
     reading: "대할 대",
   },
   {
-    word: "處",
-    reading: "살 처",
-  },
-  {
-    word: "理",
-    reading: "다스릴 리",
-  },
-  {
     word: "體",
     reading: "몸 체",
   },
@@ -972,20 +860,8 @@ export const CHINESE_CHARACTERS = [
     reading: "과녁 적",
   },
   {
-    word: "大",
-    reading: "큰 대",
-  },
-  {
-    word: "槪",
-    reading: "대개 개",
-  },
-  {
     word: "選",
     reading: "가릴 선",
-  },
-  {
-    word: "手",
-    reading: "손 수",
   },
   {
     word: "效",
@@ -994,10 +870,6 @@ export const CHINESE_CHARACTERS = [
   {
     word: "率",
     reading: "비율 율",
-  },
-  {
-    word: "的",
-    reading: "과녁 적",
   },
   {
     word: "準",
@@ -1028,18 +900,6 @@ export const CHINESE_CHARACTERS = [
     reading: "뜻 의",
   },
   {
-    word: "慾",
-    reading: "욕심 욕",
-  },
-  {
-    word: "最",
-    reading: "가장 최",
-  },
-  {
-    word: "善",
-    reading: "착할 선",
-  },
-  {
     word: "樹",
     reading: "나무 수",
   },
@@ -1048,20 +908,12 @@ export const CHINESE_CHARACTERS = [
     reading: "설 립",
   },
   {
-    word: "業",
-    reading: "업 업",
-  },
-  {
     word: "務",
     reading: "힘쓸 무",
   },
   {
     word: "從",
     reading: "좇을 종",
-  },
-  {
-    word: "業",
-    reading: "업 업",
   },
   {
     word: "員",
@@ -1088,16 +940,8 @@ export const CHINESE_CHARACTERS = [
     reading: "도울 원",
   },
   {
-    word: "相",
-    reading: "서로 상",
-  },
-  {
     word: "衝",
     reading: "찌를 충",
-  },
-  {
-    word: "利",
-    reading: "이할 이",
   },
   {
     word: "害",
@@ -1108,32 +952,12 @@ export const CHINESE_CHARACTERS = [
     reading: "관계할 관",
   },
   {
-    word: "係",
-    reading: "맬 계",
-  },
-  {
-    word: "調",
-    reading: "고를 조",
-  },
-  {
     word: "整",
     reading: "가지런할 정",
   },
   {
-    word: "—",
-    reading: "한 일",
-  },
-  {
     word: "致",
     reading: "이를 치",
-  },
-  {
-    word: "測",
-    reading: "헤아릴 측",
-  },
-  {
-    word: "定",
-    reading: "정할 정",
   },
   {
     word: "偏",
@@ -1174,10 +998,6 @@ export const CHINESE_CHARACTERS = [
   {
     word: "行",
     reading: "다닐 행",
-  },
-  {
-    word: "利",
-    reading: "이할 이",
   },
   {
     word: "潤",
@@ -1244,28 +1064,12 @@ export const CHINESE_CHARACTERS = [
     reading: "다툴 쟁",
   },
   {
-    word: "文",
-    reading: "글월 문",
-  },
-  {
     word: "化",
     reading: "될 화",
   },
   {
     word: "圈",
     reading: "우리 권",
-  },
-  {
-    word: "自",
-    reading: "스스로 자",
-  },
-  {
-    word: "由",
-    reading: "말미암을 유",
-  },
-  {
-    word: "自",
-    reading: "스스로 자",
   },
   {
     word: "在",
@@ -1296,24 +1100,12 @@ export const CHINESE_CHARACTERS = [
     reading: "클 거",
   },
   {
-    word: "大",
-    reading: "큰 대",
-  },
-  {
     word: "交",
     reading: "사귈 교",
   },
   {
     word: "流",
     reading: "흐를 류",
-  },
-  {
-    word: "關",
-    reading: "관계할 관",
-  },
-  {
-    word: "係",
-    reading: "맬 계",
   },
   {
     word: "維",
@@ -1334,10 +1126,6 @@ export const CHINESE_CHARACTERS = [
   {
     word: "滅",
     reading: "멸망할 멸",
-  },
-  {
-    word: "過",
-    reading: "지날 과",
   },
   {
     word: "程",
@@ -1404,18 +1192,6 @@ export const CHINESE_CHARACTERS = [
     reading: "언덕 안",
   },
   {
-    word: "原",
-    reading: "언덕 원",
-  },
-  {
-    word: "保",
-    reading: "지킬 보",
-  },
-  {
-    word: "存",
-    reading: "있을 존",
-  },
-  {
     word: "繼",
     reading: "이을 계",
   },
@@ -1436,24 +1212,12 @@ export const CHINESE_CHARACTERS = [
     reading: "도끼 근",
   },
   {
-    word: "最",
-    reading: "가장 최",
-  },
-  {
-    word: "近",
-    reading: "가까울 근",
-  },
-  {
     word: "取",
     reading: "취할 취",
   },
   {
     word: "聯",
     reading: "잇달 연",
-  },
-  {
-    word: "合",
-    reading: "합할 합",
   },
   {
     word: "採",
@@ -1470,10 +1234,6 @@ export const CHINESE_CHARACTERS = [
   {
     word: "案",
     reading: "책상 안",
-  },
-  {
-    word: "是",
-    reading: "옳을 시",
   },
   {
     word: "曾",
@@ -1496,10 +1256,6 @@ export const CHINESE_CHARACTERS = [
     reading: "비단 증",
   },
   {
-    word: "僧",
-    reading: "승려 승",
-  },
-  {
     word: "連",
     reading: "잇닿을 연",
   },
@@ -1508,24 +1264,12 @@ export const CHINESE_CHARACTERS = [
     reading: "이을 속",
   },
   {
-    word: "選",
-    reading: "가릴 선",
-  },
-  {
-    word: "擇",
-    reading: "가릴 택",
-  },
-  {
     word: "狀",
     reading: "형상 상/장",
   },
   {
     word: "況",
     reading: "하물며 황",
-  },
-  {
-    word: "結",
-    reading: "맺을 결",
   },
   {
     word: "局",
@@ -1542,10 +1286,6 @@ export const CHINESE_CHARACTERS = [
   {
     word: "瞬",
     reading: "깜짝일 순",
-  },
-  {
-    word: "間",
-    reading: "사이 간",
   },
   {
     word: "昭",
@@ -1604,10 +1344,6 @@ export const CHINESE_CHARACTERS = [
     reading: "지을 작",
   },
   {
-    word: "品",
-    reading: "물건 품",
-  },
-  {
     word: "昨",
     reading: "어제 작",
   },
@@ -1644,10 +1380,6 @@ export const CHINESE_CHARACTERS = [
     reading: "만날 우",
   },
   {
-    word: "保",
-    reading: "지킬 보",
-  },
-  {
     word: "障",
     reading: "막을 장",
   },
@@ -1668,28 +1400,12 @@ export const CHINESE_CHARACTERS = [
     reading: "앞 전",
   },
   {
-    word: "提",
-    reading: "끌 제",
-  },
-  {
     word: "決",
     reading: "결단할 결",
   },
   {
-    word: "結",
-    reading: "맺을 결",
-  },
-  {
-    word: "論",
-    reading: "논할 론",
-  },
-  {
     word: "具",
     reading: "갖출 구",
-  },
-  {
-    word: "體",
-    reading: "몸 체",
   },
   {
     word: "性",
@@ -1736,10 +1452,6 @@ export const CHINESE_CHARACTERS = [
     reading: "새 추",
   },
   {
-    word: "進",
-    reading: "나아갈 진",
-  },
-  {
     word: "雙",
     reading: "쌍 쌍",
   },
@@ -1752,30 +1464,6 @@ export const CHINESE_CHARACTERS = [
     reading: "바탕 질",
   },
   {
-    word: "的",
-    reading: "과녁 적",
-  },
-  {
-    word: "定",
-    reading: "정할 정",
-  },
-  {
-    word: "義",
-    reading: "옳을 의",
-  },
-  {
-    word: "正",
-    reading: "바를 정",
-  },
-  {
-    word: "義",
-    reading: "옳을 의",
-  },
-  {
-    word: "要",
-    reading: "요긴할 요",
-  },
-  {
     word: "素",
     reading: "바탕/흴 소",
   },
@@ -1784,40 +1472,16 @@ export const CHINESE_CHARACTERS = [
     reading: "안 내",
   },
   {
-    word: "在",
-    reading: "있을 재",
-  },
-  {
     word: "始",
     reading: "처음 시",
-  },
-  {
-    word: "作",
-    reading: "지을 작",
   },
   {
     word: "照",
     reading: "비출 조",
   },
   {
-    word: "應",
-    reading: "응할 응",
-  },
-  {
     word: "建",
     reading: "세울 건",
-  },
-  {
-    word: "國",
-    reading: "나라 국",
-  },
-  {
-    word: "政",
-    reading: "정사 정",
-  },
-  {
-    word: "權",
-    reading: "저울추 권",
   },
   {
     word: "獨",
@@ -1854,10 +1518,6 @@ export const CHINESE_CHARACTERS = [
   {
     word: "壞",
     reading: "무너질 괴",
-  },
-  {
-    word: "交",
-    reading: "사귈 교",
   },
   {
     word: "易",
@@ -1904,32 +1564,12 @@ export const CHINESE_CHARACTERS = [
     reading: "풀 해",
   },
   {
-    word: "決",
-    reading: "결단할 결",
-  },
-  {
-    word: "建",
-    reading: "세울 건",
-  },
-  {
-    word: "立",
-    reading: "설 립",
-  },
-  {
     word: "普",
     reading: "널리 보",
   },
   {
     word: "及",
     reading: "미칠 급",
-  },
-  {
-    word: "推",
-    reading: "밀 추",
-  },
-  {
-    word: "進",
-    reading: "나아갈 진",
   },
   {
     word: "代",
@@ -1940,24 +1580,8 @@ export const CHINESE_CHARACTERS = [
     reading: "바꿀 체",
   },
   {
-    word: "市",
-    reading: "저자 시",
-  },
-  {
-    word: "場",
-    reading: "마당 장",
-  },
-  {
     word: "商",
     reading: "장사 상",
-  },
-  {
-    word: "業",
-    reading: "업 업",
-  },
-  {
-    word: "增",
-    reading: "더할 증",
   },
   {
     word: "加",
@@ -1968,40 +1592,16 @@ export const CHINESE_CHARACTERS = [
     reading: "빌 공",
   },
   {
-    word: "間",
-    reading: "사이 간",
-  },
-  {
-    word: "擴",
-    reading: "넓힐 확",
-  },
-  {
-    word: "大",
-    reading: "큰 대",
-  },
-  {
     word: "貿",
     reading: "무역할 무",
-  },
-  {
-    word: "易",
-    reading: "바꿀 역",
   },
   {
     word: "機",
     reading: "틀 기",
   },
   {
-    word: "能",
-    reading: "능할 능",
-  },
-  {
     word: "穀",
     reading: "곡식 곡",
-  },
-  {
-    word: "物",
-    reading: "물건 물",
   },
   {
     word: "流",
@@ -2024,10 +1624,6 @@ export const CHINESE_CHARACTERS = [
     reading: "뜻 정",
   },
   {
-    word: "意",
-    reading: "뜻 의",
-  },
-  {
     word: "旅",
     reading: "나그네 여",
   },
@@ -2036,24 +1632,12 @@ export const CHINESE_CHARACTERS = [
     reading: "집 관",
   },
   {
-    word: "定",
-    reading: "정할 정",
-  },
-  {
-    word: "處",
-    reading: "살 처",
-  },
-  {
     word: "筆",
     reading: "붓 필",
   },
   {
     word: "者",
     reading: "놈 자",
-  },
-  {
-    word: "情",
-    reading: "뜻 정",
   },
   {
     word: "感",
@@ -2076,14 +1660,6 @@ export const CHINESE_CHARACTERS = [
     reading: "돼지 시",
   },
   {
-    word: "本",
-    reading: "근본 본",
-  },
-  {
-    word: "位",
-    reading: "자리 위",
-  },
-  {
     word: "死",
     reading: "죽을 사",
   },
@@ -2096,10 +1672,6 @@ export const CHINESE_CHARACTERS = [
     reading: "이길 극",
   },
   {
-    word: "服",
-    reading: "옷 복",
-  },
-  {
     word: "憂",
     reading: "근심 우",
   },
@@ -2110,10 +1682,6 @@ export const CHINESE_CHARACTERS = [
   {
     word: "知",
     reading: "알 지",
-  },
-  {
-    word: "命",
-    reading: "목숨 명",
   },
   {
     word: "至",
@@ -2132,28 +1700,12 @@ export const CHINESE_CHARACTERS = [
     reading: "기쁠 열",
   },
   {
-    word: "人",
-    reading: "사람 인",
-  },
-  {
-    word: "間",
-    reading: "사이 간",
-  },
-  {
     word: "型",
     reading: "거푸집 형",
   },
   {
-    word: "形",
-    reading: "모양 형",
-  },
-  {
     word: "理",
     reading: "다스릴 이",
-  },
-  {
-    word: "由",
-    reading: "말미암을 유",
   },
   {
     word: "背",
@@ -2168,24 +1720,12 @@ export const CHINESE_CHARACTERS = [
     reading: "말씀 언",
   },
   {
-    word: "及",
-    reading: "미칠 급",
-  },
-  {
     word: "立",
     reading: "설 립/입",
   },
   {
     word: "脚",
     reading: "다리 각",
-  },
-  {
-    word: "系",
-    reading: "맬 계",
-  },
-  {
-    word: "統",
-    reading: "거느릴 통",
   },
   {
     word: "利",
@@ -2198,10 +1738,6 @@ export const CHINESE_CHARACTERS = [
   {
     word: "評",
     reading: "평할 평",
-  },
-  {
-    word: "判",
-    reading: "판단할 판",
   },
   {
     word: "妻",
@@ -2228,24 +1764,12 @@ export const CHINESE_CHARACTERS = [
     reading: "막을 어",
   },
   {
-    word: "御",
-    reading: "막을 어",
-  },
-  {
     word: "微",
     reading: "작을 미",
   },
   {
-    word: "民",
-    reading: "백성 민",
-  },
-  {
     word: "族",
     reading: "겨레 족",
-  },
-  {
-    word: "相",
-    reading: "서로 상",
   },
   {
     word: "異",
@@ -2256,16 +1780,8 @@ export const CHINESE_CHARACTERS = [
     reading: "항상 항",
   },
   {
-    word: "常",
-    reading: "떳떳할 상",
-  },
-  {
     word: "野",
     reading: "들 야",
-  },
-  {
-    word: "望",
-    reading: "바랄 망",
   },
   {
     word: "象",
@@ -2304,10 +1820,6 @@ export const CHINESE_CHARACTERS = [
     reading: "누를 압",
   },
   {
-    word: "制",
-    reading: "절제할 제",
-  },
-  {
     word: "東",
     reading: "동녘 동",
   },
@@ -2320,44 +1832,20 @@ export const CHINESE_CHARACTERS = [
     reading: "베낄 사",
   },
   {
-    word: "實",
-    reading: "열매 실",
-  },
-  {
     word: "事",
     reading: "일 사",
-  },
-  {
-    word: "實",
-    reading: "열매 실",
   },
   {
     word: "風",
     reading: "바람 풍",
   },
   {
-    word: "景",
-    reading: "볕 경",
-  },
-  {
-    word: "畵",
-    reading: "그림 화",
-  },
-  {
     word: "幅",
     reading: "폭 폭",
   },
   {
-    word: "畫",
-    reading: "그림 화",
-  },
-  {
     word: "福",
     reading: "복 복",
-  },
-  {
-    word: "微",
-    reading: "작을 미",
   },
   {
     word: "笑",
@@ -2368,14 +1856,6 @@ export const CHINESE_CHARACTERS = [
     reading: "뽑을 추",
   },
   {
-    word: "象",
-    reading: "코끼리 상",
-  },
-  {
-    word: "模",
-    reading: "본뜰 모",
-  },
-  {
     word: "樣",
     reading: "모양 양",
   },
@@ -2384,32 +1864,16 @@ export const CHINESE_CHARACTERS = [
     reading: "녹을 융",
   },
   {
-    word: "合",
-    reading: "합할 합",
-  },
-  {
     word: "基",
     reading: "터 기",
-  },
-  {
-    word: "準",
-    reading: "준할 준",
   },
   {
     word: "生",
     reading: "날 생",
   },
   {
-    word: "命",
-    reading: "목숨 명",
-  },
-  {
     word: "波",
     reading: "물결 파",
-  },
-  {
-    word: "動",
-    reading: "움직일 동",
   },
   {
     word: "派",
@@ -2428,20 +1892,12 @@ export const CHINESE_CHARACTERS = [
     reading: "조정 정",
   },
   {
-    word: "同",
-    reading: "한가지 동",
-  },
-  {
     word: "時",
     reading: "때 시",
   },
   {
     word: "多",
     reading: "많을 다",
-  },
-  {
-    word: "發",
-    reading: "필 발",
   },
   {
     word: "先",
@@ -2452,18 +1908,6 @@ export const CHINESE_CHARACTERS = [
     reading: "무리 배",
   },
   {
-    word: "遂",
-    reading: "이를 수",
-  },
-  {
-    word: "行",
-    reading: "다닐 행",
-  },
-  {
-    word: "生",
-    reading: "날 생",
-  },
-  {
     word: "活",
     reading: "살 활",
   },
@@ -2472,60 +1916,16 @@ export const CHINESE_CHARACTERS = [
     reading: "숨을 은",
   },
   {
-    word: "然",
-    reading: "그럴 연",
-  },
-  {
-    word: "制",
-    reading: "절제할 제",
-  },
-  {
-    word: "度",
-    reading: "법도 도",
-  },
-  {
-    word: "學",
-    reading: "배울 학",
-  },
-  {
     word: "習",
     reading: "익힐 습",
-  },
-  {
-    word: "公",
-    reading: "공평할 공",
-  },
-  {
-    word: "認",
-    reading: "알 인",
-  },
-  {
-    word: "公",
-    reading: "공평할 공",
-  },
-  {
-    word: "人",
-    reading: "사람 인",
   },
   {
     word: "卒",
     reading: "마칠 졸",
   },
   {
-    word: "業",
-    reading: "업 업",
-  },
-  {
-    word: "實",
-    reading: "열매 실",
-  },
-  {
     word: "施",
     reading: "베풀 시",
-  },
-  {
-    word: "提",
-    reading: "끌 제",
   },
   {
     word: "供",
@@ -2540,10 +1940,6 @@ export const CHINESE_CHARACTERS = [
     reading: "은혜 혜",
   },
   {
-    word: "敎",
-    reading: "가르칠 교",
-  },
-  {
     word: "師",
     reading: "스승 사",
   },
@@ -2556,44 +1952,16 @@ export const CHINESE_CHARACTERS = [
     reading: "빠를 속",
   },
   {
-    word: "多",
-    reading: "많을 다",
-  },
-  {
-    word: "樣",
-    reading: "모양 양",
-  },
-  {
     word: "個",
     reading: "낱 개",
-  },
-  {
-    word: "人",
-    reading: "사람 인",
   },
   {
     word: "變",
     reading: "변할 변",
   },
   {
-    word: "質",
-    reading: "바탕 질",
-  },
-  {
     word: "專",
     reading: "오로지 전",
-  },
-  {
-    word: "攻",
-    reading: "칠 공",
-  },
-  {
-    word: "改",
-    reading: "고칠 개",
-  },
-  {
-    word: "編",
-    reading: "엮을 편",
   },
   {
     word: "改",
@@ -2608,10 +1976,6 @@ export const CHINESE_CHARACTERS = [
     reading: "가죽 혁",
   },
   {
-    word: "應",
-    reading: "응할 응",
-  },
-  {
     word: "試",
     reading: "시험 시",
   },
@@ -2620,16 +1984,8 @@ export const CHINESE_CHARACTERS = [
     reading: "넓을 광",
   },
   {
-    word: "範",
-    reading: "법 범",
-  },
-  {
     word: "深",
     reading: "깊을 심",
-  },
-  {
-    word: "化",
-    reading: "될 화",
   },
   {
     word: "道",
@@ -2642,22 +1998,6 @@ export const CHINESE_CHARACTERS = [
   {
     word: "修",
     reading: "닦을 수",
-  },
-  {
-    word: "特",
-    reading: "특별할 특",
-  },
-  {
-    word: "定",
-    reading: "정할 정",
-  },
-  {
-    word: "受",
-    reading: "받을 수",
-  },
-  {
-    word: "講",
-    reading: "외울 강",
   },
   {
     word: "授",
@@ -2680,24 +2020,8 @@ export const CHINESE_CHARACTERS = [
     reading: "생각 사",
   },
   {
-    word: "考",
-    reading: "생각할 고",
-  },
-  {
-    word: "判",
-    reading: "판단할 판",
-  },
-  {
-    word: "斷",
-    reading: "끊을 단",
-  },
-  {
     word: "看",
     reading: "볼 간",
-  },
-  {
-    word: "過",
-    reading: "지날 과",
   },
   {
     word: "見",
@@ -2708,40 +2032,12 @@ export const CHINESE_CHARACTERS = [
     reading: "볼 시",
   },
   {
-    word: "要",
-    reading: "요긴할 요",
-  },
-  {
     word: "約",
     reading: "맺을 약",
   },
   {
-    word: "暗",
-    reading: "어두울 암",
-  },
-  {
     word: "記",
     reading: "기록할 기",
-  },
-  {
-    word: "受",
-    reading: "받을 수",
-  },
-  {
-    word: "業",
-    reading: "업 업",
-  },
-  {
-    word: "推",
-    reading: "밀 추",
-  },
-  {
-    word: "論",
-    reading: "논할 론",
-  },
-  {
-    word: "分",
-    reading: "나눌 분",
   },
   {
     word: "析",
@@ -2756,20 +2052,8 @@ export const CHINESE_CHARACTERS = [
     reading: "한할 한",
   },
   {
-    word: "定",
-    reading: "정할 정",
-  },
-  {
-    word: "內",
-    reading: "안 내",
-  },
-  {
     word: "容",
     reading: "얼굴 용",
-  },
-  {
-    word: "斷",
-    reading: "끊을 단",
   },
   {
     word: "片",
@@ -2784,20 +2068,8 @@ export const CHINESE_CHARACTERS = [
     reading: "책 편",
   },
   {
-    word: "選",
-    reading: "가릴 선",
-  },
-  {
     word: "拔",
     reading: "뽑을 발",
-  },
-  {
-    word: "解",
-    reading: "풀 해",
-  },
-  {
-    word: "決",
-    reading: "결단할 결",
   },
   {
     word: "上",
@@ -2812,24 +2084,8 @@ export const CHINESE_CHARACTERS = [
     reading: "내릴 강",
   },
   {
-    word: "機",
-    reading: "틀 기",
-  },
-  {
-    word: "習",
-    reading: "익힐 습",
-  },
-  {
-    word: "得",
-    reading: "얻을 득",
-  },
-  {
     word: "素",
     reading: "바탕 소",
-  },
-  {
-    word: "養",
-    reading: "기를 양",
   },
   {
     word: "墨",
@@ -2860,10 +2116,6 @@ export const CHINESE_CHARACTERS = [
     reading: "흰 백",
   },
   {
-    word: "黃",
-    reading: "누를 황",
-  },
-  {
     word: "靑",
     reading: "푸를 청",
   },
@@ -2874,10 +2126,6 @@ export const CHINESE_CHARACTERS = [
   {
     word: "傳",
     reading: "전할 전",
-  },
-  {
-    word: "統",
-    reading: "거느릴 통",
   },
   {
     word: "銃",
@@ -2896,14 +2144,6 @@ export const CHINESE_CHARACTERS = [
     reading: "즐길 긍",
   },
   {
-    word: "定",
-    reading: "정할 정",
-  },
-  {
-    word: "模",
-    reading: "본뜰 모",
-  },
-  {
     word: "索",
     reading: "찾을 색",
   },
@@ -2914,18 +2154,6 @@ export const CHINESE_CHARACTERS = [
   {
     word: "孤",
     reading: "외로울 고",
-  },
-  {
-    word: "立",
-    reading: "설 립",
-  },
-  {
-    word: "稀",
-    reading: "드물 희",
-  },
-  {
-    word: "微",
-    reading: "작을 미",
   },
   {
     word: "方",
@@ -2956,14 +2184,6 @@ export const CHINESE_CHARACTERS = [
     reading: "맹인 맹",
   },
   {
-    word: "目",
-    reading: "눈 목",
-  },
-  {
-    word: "的",
-    reading: "과녁 적",
-  },
-  {
     word: "復",
     reading: "회복할 복",
   },
@@ -2976,10 +2196,6 @@ export const CHINESE_CHARACTERS = [
     reading: "비평할 비",
   },
   {
-    word: "判",
-    reading: "판단할 판",
-  },
-  {
     word: "比",
     reading: "견줄 비",
   },
@@ -2988,44 +2204,12 @@ export const CHINESE_CHARACTERS = [
     reading: "찾을 탐",
   },
   {
-    word: "究",
-    reading: "연구할 구",
-  },
-  {
-    word: "共",
-    reading: "한가지 공",
-  },
-  {
-    word: "同",
-    reading: "한가지 동",
-  },
-  {
-    word: "落",
-    reading: "떨어질 낙",
-  },
-  {
-    word: "後",
-    reading: "뒤 후",
-  },
-  {
-    word: "先",
-    reading: "먼저 선",
-  },
-  {
     word: "驅",
     reading: "몰 구",
   },
   {
     word: "遺",
     reading: "남길 유",
-  },
-  {
-    word: "物",
-    reading: "물건 물",
-  },
-  {
-    word: "心",
-    reading: "마음 심",
   },
   {
     word: "臟",
@@ -3040,24 +2224,8 @@ export const CHINESE_CHARACTERS = [
     reading: "고울 려",
   },
   {
-    word: "高",
-    reading: "높을 고",
-  },
-  {
-    word: "僧",
-    reading: "승려 승",
-  },
-  {
-    word: "編",
-    reading: "엮을 편",
-  },
-  {
     word: "纂",
     reading: "모을 찬",
-  },
-  {
-    word: "正",
-    reading: "바를 정",
   },
   {
     word: "史",
@@ -3066,14 +2234,6 @@ export const CHINESE_CHARACTERS = [
   {
     word: "歷",
     reading: "지날 력/역",
-  },
-  {
-    word: "史",
-    reading: "사기 사",
-  },
-  {
-    word: "記",
-    reading: "기록할 기",
   },
   {
     word: "錄",
@@ -3088,24 +2248,8 @@ export const CHINESE_CHARACTERS = [
     reading: "짝 려",
   },
   {
-    word: "獨",
-    reading: "홀로 독",
-  },
-  {
-    word: "特",
-    reading: "특별할 특",
-  },
-  {
     word: "敍",
     reading: "펼 서",
-  },
-  {
-    word: "述",
-    reading: "펼 술",
-  },
-  {
-    word: "記",
-    reading: "기록할 기",
   },
   {
     word: "述",
@@ -3128,14 +2272,6 @@ export const CHINESE_CHARACTERS = [
     reading: "우러를 앙",
   },
   {
-    word: "傳",
-    reading: "전할 전",
-  },
-  {
-    word: "來",
-    reading: "올 래",
-  },
-  {
     word: "祈",
     reading: "빌 기",
   },
@@ -3152,10 +2288,6 @@ export const CHINESE_CHARACTERS = [
     reading: "재주 술",
   },
   {
-    word: "政",
-    reading: "정사 정",
-  },
-  {
     word: "治",
     reading: "다스릴 치",
   },
@@ -3166,10 +2298,6 @@ export const CHINESE_CHARACTERS = [
   {
     word: "盛",
     reading: "성할 성",
-  },
-  {
-    word: "提",
-    reading: "끌 제",
   },
   {
     word: "起",
@@ -3184,20 +2312,8 @@ export const CHINESE_CHARACTERS = [
     reading: "의심할 아",
   },
   {
-    word: "當",
-    reading: "마땅 당",
-  },
-  {
-    word: "面",
-    reading: "낯 면",
-  },
-  {
     word: "否",
     reading: "아닐 부",
-  },
-  {
-    word: "定",
-    reading: "정할 정",
   },
   {
     word: "不",
@@ -3208,32 +2324,12 @@ export const CHINESE_CHARACTERS = [
     reading: "강할 강",
   },
   {
-    word: "調",
-    reading: "고를 조",
-  },
-  {
     word: "周",
     reading: "두루 주",
   },
   {
-    word: "民",
-    reading: "백성 민",
-  },
-  {
-    word: "主",
-    reading: "주인 주",
-  },
-  {
-    word: "義",
-    reading: "옳을 의",
-  },
-  {
     word: "核",
     reading: "씨 핵",
-  },
-  {
-    word: "心",
-    reading: "마음 심",
   },
   {
     word: "參",
@@ -3244,30 +2340,6 @@ export const CHINESE_CHARACTERS = [
     reading: "더불 여",
   },
   {
-    word: "贈",
-    reading: "줄 증",
-  },
-  {
-    word: "與",
-    reading: "더불 여",
-  },
-  {
-    word: "代",
-    reading: "대신할 대",
-  },
-  {
-    word: "表",
-    reading: "겉 표",
-  },
-  {
-    word: "理",
-    reading: "다스릴 이",
-  },
-  {
-    word: "事",
-    reading: "일 사",
-  },
-  {
     word: "責",
     reading: "꾸짖을 책",
   },
@@ -3276,28 +2348,12 @@ export const CHINESE_CHARACTERS = [
     reading: "맡길 임",
   },
   {
-    word: "原",
-    reading: "언덕 원",
-  },
-  {
     word: "因",
     reading: "인할 인",
   },
   {
     word: "水",
     reading: "물 수",
-  },
-  {
-    word: "準",
-    reading: "준할 준",
-  },
-  {
-    word: "作",
-    reading: "지을 작",
-  },
-  {
-    word: "動",
-    reading: "움직일 동",
   },
   {
     word: "媒",
@@ -3312,20 +2368,12 @@ export const CHINESE_CHARACTERS = [
     reading: "무거울 중",
   },
   {
-    word: "要",
-    reading: "요긴할 요",
-  },
-  {
     word: "期",
     reading: "기약할 기",
   },
   {
     word: "待",
     reading: "기다릴 대",
-  },
-  {
-    word: "選",
-    reading: "가릴 선",
   },
   {
     word: "擧",
@@ -3336,32 +2384,8 @@ export const CHINESE_CHARACTERS = [
     reading: "비로소 시",
   },
   {
-    word: "發",
-    reading: "필 발",
-  },
-  {
-    word: "實",
-    reading: "열매 실",
-  },
-  {
-    word: "際",
-    reading: "즈음 제",
-  },
-  {
-    word: "速",
-    reading: "빠를 속",
-  },
-  {
-    word: "度",
-    reading: "법도 도",
-  },
-  {
     word: "隣",
     reading: "이웃 인",
-  },
-  {
-    word: "接",
-    reading: "이을 접",
   },
   {
     word: "設",
@@ -3370,10 +2394,6 @@ export const CHINESE_CHARACTERS = [
   {
     word: "置",
     reading: "둘 치",
-  },
-  {
-    word: "說",
-    reading: "말씀 설",
   },
   {
     word: "顧",
@@ -3396,20 +2416,12 @@ export const CHINESE_CHARACTERS = [
     reading: "집 당",
   },
   {
-    word: "對",
-    reading: "대할 대",
-  },
-  {
     word: "照",
     reading: "비칠 조",
   },
   {
     word: "餘",
     reading: "남을 여",
-  },
-  {
-    word: "地",
-    reading: "땅 지",
   },
   {
     word: "休",
@@ -3428,48 +2440,16 @@ export const CHINESE_CHARACTERS = [
     reading: "입 구",
   },
   {
-    word: "店",
-    reading: "가게 점",
-  },
-  {
     word: "鋪",
     reading: "펼 포",
-  },
-  {
-    word: "折",
-    reading: "꺾을 절",
-  },
-  {
-    word: "半",
-    reading: "반 반",
-  },
-  {
-    word: "代",
-    reading: "대신할 대",
   },
   {
     word: "身",
     reading: "몸 신",
   },
   {
-    word: "立",
-    reading: "설 립/입",
-  },
-  {
-    word: "場",
-    reading: "마당 장",
-  },
-  {
     word: "別",
     reading: "나눌 별",
-  },
-  {
-    word: "途",
-    reading: "길 도",
-  },
-  {
-    word: "分",
-    reading: "나눌 분",
   },
   {
     word: "離",
@@ -3478,10 +2458,6 @@ export const CHINESE_CHARACTERS = [
   {
     word: "優",
     reading: "넉넉할 우",
-  },
-  {
-    word: "位",
-    reading: "자리 위",
   },
   {
     word: "友",
@@ -3504,10 +2480,6 @@ export const CHINESE_CHARACTERS = [
     reading: "어긋날 위",
   },
   {
-    word: "背",
-    reading: "등 배",
-  },
-  {
     word: "例",
     reading: "법식 례/예",
   },
@@ -3520,20 +2492,8 @@ export const CHINESE_CHARACTERS = [
     reading: "잡을 집",
   },
   {
-    word: "行",
-    reading: "다닐 행",
-  },
-  {
     word: "掩",
     reading: "가릴 엄",
-  },
-  {
-    word: "護",
-    reading: "도울 호",
-  },
-  {
-    word: "解",
-    reading: "풀 해",
   },
   {
     word: "釋",

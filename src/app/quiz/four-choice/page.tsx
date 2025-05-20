@@ -48,7 +48,7 @@ export default function FourChoicePage() {
       submittedQuizCount={submittedQuizzes.length}
       totalQuizCount={CHINESE_CHARACTERS.length}
     >
-      <div className="flex flex-col gap-16 p-6">
+      <div className="flex flex-col gap-5 p-6">
         <div className="flex flex-col items-center gap-5">
           <QuizView className="bg-base-300 flex h-[240px] w-full items-center justify-center rounded-xl">
             <span className="text-9xl">{currentQuiz?.question}</span>

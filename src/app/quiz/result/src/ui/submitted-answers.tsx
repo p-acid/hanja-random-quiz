@@ -49,13 +49,13 @@ interface AnswerListProps {
 
 function AnswerList({ title, answers, emptyMessage }: AnswerListProps) {
   return (
-    <div className="flex flex-col gap-6">
+    <div className="flex flex-col gap-5">
       <h1 className="text-xl font-bold tracking-tighter">{title}</h1>
       <div className="flex flex-col gap-3">
         {answers.length === 0 ? (
           <div className="bg-base-200 flex h-40 flex-col items-center justify-center gap-5 rounded-lg">
             <CircleSlash2 className="text-base-content size-10" />
-            <span className="text-zinc-400">{emptyMessage}</span>
+            <span className="text-stone-400">{emptyMessage}</span>
           </div>
         ) : (
           answers.map((quiz, index) => (

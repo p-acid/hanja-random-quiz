@@ -38,5 +38,14 @@
 }
 
 .btn-lg {
-  @apply h-[52px] text-base;
+  @apply h-12 text-base;
+}
+
+.scrollbar-hidden:-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hidden {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
