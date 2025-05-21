@@ -111,8 +111,7 @@ export function QuizOptions() {
             className={cn(
               "label w-full justify-between text-base transition-colors duration-200",
               {
-                "text-white":
-                  optionValues[SEARCH_PARAM_KEYS.IS_ANSWER_REVEALED],
+                "text-white": optionValues.isDefault,
               },
             )}
           >
