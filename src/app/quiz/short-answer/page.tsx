@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { FormEvent, useRef, useState } from "react";
+import { FormEvent, useCallback, useRef, useState } from "react";
 
 import { QuizView } from "@/components/quiz-view";
 import { CHINESE_CHARACTERS } from "@/constants/chinese-characters";
@@ -12,6 +12,8 @@ import { getShortAnswerQuiz } from "@/utils/get-short-answer-quiz";
 import useQuizOptions from "@/hooks/use-quiz-options";
 import { cn } from "@/utils/cn";
 import useQuizAnswers from "@/hooks/use-quiz-answers";
+import { QUIZ_WORD_TYPE } from "../src/constants/quiz-options";
+import { CHINESE_CHARACTER_WORDS } from "@/constants/chinese-chracter-words";
 
 export default function ShortAnswerPage() {
   const inputRef = useRef<HTMLInputElement>(null);
@@ -20,9 +22,23 @@ export default function ShortAnswerPage() {
 
   const { push } = useRouter();
 
-  const { isAnswerRevealed } = useQuizOptions();
+  const { wordType, isAnswerRevealed } = useQuizOptions();
+
+  const totalWords =
+    wordType === QUIZ_WORD_TYPE.SINGLE
+      ? CHINESE_CHARACTERS
+      : CHINESE_CHARACTER_WORDS;
+
+  const generateQuiz = useCallback(
+    (usedWords?: string[]) => {
+      const quiz = getShortAnswerQuiz(totalWords, usedWords);
+      return quiz;
+    },
+    [totalWords],
+  );
+
   const { currentQuiz, submittedQuizzes, updateQuiz } = useQuizAnswers({
-    generateQuiz: getShortAnswerQuiz,
+    generateQuiz,
   });
 
   const submitAnswer = (event: FormEvent<HTMLFormElement>) => {

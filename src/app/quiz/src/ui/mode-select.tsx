@@ -2,7 +2,7 @@
 
 import { HTMLAttributes, useState } from "react";
 import { LucideIcon } from "lucide-react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 import { QUIZ_MODE, QUIZ_MODE_LIST } from "../constants/quiz-mode";
 
@@ -10,17 +10,17 @@ import { ValueOf } from "@/types/value-of";
 import { cn } from "@/utils/cn";
 import { PAGE_ROUTES } from "@/constants/page-routes";
 import { SEARCH_PARAM_KEYS } from "@/constants/search-params";
+import { createQueryString } from "@/utils/create-query-string";
+import useQuizOptions from "@/hooks/use-quiz-options";
 
 export function ModeSelect() {
   const [selectedMode, setSelectedMode] = useState<ValueOf<typeof QUIZ_MODE>>(
     QUIZ_MODE.FOUR_CHOICE,
   );
 
-  const searchParams = useSearchParams();
   const { push } = useRouter();
 
-  const isAnswerRevealed =
-    searchParams.get(SEARCH_PARAM_KEYS.IS_ANSWER_REVEALED) === "true";
+  const { wordType, isAnswerRevealed } = useQuizOptions();
 
   const selectMode = (newMode: ValueOf<typeof QUIZ_MODE>) => {
     setSelectedMode(newMode);
@@ -32,10 +32,12 @@ export function ModeSelect() {
       [QUIZ_MODE.SHORT_ANSWER]: PAGE_ROUTES.SHORT_ANSWER_QUIZ,
     };
 
-    push(
-      routes[selectedMode] +
-        `?${SEARCH_PARAM_KEYS.IS_ANSWER_REVEALED}=${isAnswerRevealed}`,
-    );
+    const queryString = createQueryString({
+      [SEARCH_PARAM_KEYS.WORD_TYPE]: wordType,
+      [SEARCH_PARAM_KEYS.IS_ANSWER_REVEALED]: isAnswerRevealed,
+    });
+
+    push(routes[selectedMode] + `?${queryString}`);
   };
 
   return (

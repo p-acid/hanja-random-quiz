@@ -1,5 +1,5 @@
 import { useAtom } from "jotai";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 import { submittedQuizzesAtom } from "@/atoms/submitted-quizzes";
 import { QuizCommon } from "@/types/quiz";
@@ -14,6 +14,14 @@ const useQuizAnswers = <A extends QuizCommon>({
   const [currentQuiz, setCurrentQuiz] = useState<A>();
 
   const [submittedQuizzes, setSubmittedQuizzes] = useAtom(submittedQuizzesAtom);
+
+  const memoizedGenerateQuiz = useCallback(
+    (usedWords?: string[]) => {
+      const quiz = generateQuiz(usedWords);
+      return quiz;
+    },
+    [generateQuiz],
+  );
 
   const updateQuiz = (submittedAnswer: string) => {
     if (!currentQuiz) return;
@@ -32,8 +40,8 @@ const useQuizAnswers = <A extends QuizCommon>({
   };
 
   useEffect(() => {
-    setCurrentQuiz(generateQuiz());
-  }, [generateQuiz]);
+    setCurrentQuiz(memoizedGenerateQuiz());
+  }, [memoizedGenerateQuiz]);
 
   useEffect(() => {
     setSubmittedQuizzes([]);

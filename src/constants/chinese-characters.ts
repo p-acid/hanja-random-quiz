@@ -1,4 +1,6 @@
-export const CHINESE_CHARACTERS = [
+import { Word } from "@/types/word";
+
+export const CHINESE_CHARACTERS: Word[] = [
   {
     word: "亦",
     reading: "또 역",
