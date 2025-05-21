@@ -2,12 +2,12 @@
 
 import { HTMLAttributes, useState } from "react";
 import { LucideIcon } from "lucide-react";
+import { useRouter, useSearchParams } from "next/navigation";
+
+import { QUIZ_MODE, QUIZ_MODE_LIST } from "../constants/quiz-mode";
 
 import { ValueOf } from "@/types/value-of";
 import { cn } from "@/utils/cn";
-
-import { QUIZ_MODE, QUIZ_MODE_LIST } from "../constants/quiz-mode";
-import { useRouter, useSearchParams } from "next/navigation";
 import { PAGE_ROUTES } from "@/constants/page-routes";
 import { SEARCH_PARAM_KEYS } from "@/constants/search-params";
 
