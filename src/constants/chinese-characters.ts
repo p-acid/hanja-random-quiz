@@ -64,6 +64,10 @@ export const CHINESE_CHARACTERS = [
     reading: "정할 정",
   },
   {
+    word: "精",
+    reading: "정할 정",
+  },
+  {
     word: "着",
     reading: "붙을 착",
   },
@@ -365,7 +369,7 @@ export const CHINESE_CHARACTERS = [
   },
   {
     word: "設",
-    reading: "말씀 설",
+    reading: "말씀/베풀 설",
   },
   {
     word: "明",
@@ -796,7 +800,7 @@ export const CHINESE_CHARACTERS = [
     reading: "오직 유",
   },
   {
-    word: "—",
+    word: "一",
     reading: "한 일",
   },
   {
@@ -853,6 +857,10 @@ export const CHINESE_CHARACTERS = [
   },
   {
     word: "系",
+    reading: "이어맬 계",
+  },
+  {
+    word: "係",
     reading: "맬 계",
   },
   {
@@ -1992,6 +2000,10 @@ export const CHINESE_CHARACTERS = [
     reading: "길 도",
   },
   {
+    word: "途",
+    reading: "길 도",
+  },
+  {
     word: "履",
     reading: "밟을 이",
   },
@@ -2386,10 +2398,6 @@ export const CHINESE_CHARACTERS = [
   {
     word: "隣",
     reading: "이웃 인",
-  },
-  {
-    word: "設",
-    reading: "베풀 설",
   },
   {
     word: "置",
