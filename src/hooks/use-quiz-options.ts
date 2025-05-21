@@ -1,7 +1,9 @@
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
+
 import { QUIZ_WORD_TYPE } from "@/app/quiz/src/constants/quiz-options";
 import { SEARCH_PARAM_KEYS } from "@/constants/search-params";
+import { LOCAL_STORAGE_KEY } from "@/constants/storage-key";
 import { createQueryString } from "@/utils/create-query-string";
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 type QuizOptionQueries = {
   [SEARCH_PARAM_KEYS.WORD_TYPE]: string;
@@ -13,11 +15,30 @@ const useQuizOptions = () => {
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
-  const wordType =
-    searchParams.get(SEARCH_PARAM_KEYS.WORD_TYPE) ?? QUIZ_WORD_TYPE.SINGLE;
+  const storageOptionString =
+    typeof localStorage !== "undefined"
+      ? localStorage.getItem(LOCAL_STORAGE_KEY.QUIZ_OPTIONS)
+      : null;
+  const storageOptions = storageOptionString
+    ? JSON.parse(storageOptionString)
+    : null;
 
-  const isAnswerRevealed =
-    searchParams.get(SEARCH_PARAM_KEYS.IS_ANSWER_REVEALED) === "true";
+  const defaultOptions = {
+    [SEARCH_PARAM_KEYS.WORD_TYPE]:
+      storageOptions?.[SEARCH_PARAM_KEYS.WORD_TYPE] || QUIZ_WORD_TYPE.SINGLE,
+    [SEARCH_PARAM_KEYS.IS_ANSWER_REVEALED]:
+      !!storageOptions?.[SEARCH_PARAM_KEYS.IS_ANSWER_REVEALED],
+  };
+
+  const wordType =
+    searchParams.get(SEARCH_PARAM_KEYS.WORD_TYPE) ??
+    defaultOptions[SEARCH_PARAM_KEYS.WORD_TYPE];
+
+  const isAnswerRevealed = searchParams.get(
+    SEARCH_PARAM_KEYS.IS_ANSWER_REVEALED,
+  )
+    ? searchParams.get(SEARCH_PARAM_KEYS.IS_ANSWER_REVEALED) === "true"
+    : defaultOptions[SEARCH_PARAM_KEYS.IS_ANSWER_REVEALED];
 
   const applyOptions = (queries: QuizOptionQueries) => {
     const queryString = createQueryString({
@@ -27,7 +48,7 @@ const useQuizOptions = () => {
     push(pathname + `?${queryString}`);
   };
 
-  return { isAnswerRevealed, wordType, applyOptions };
+  return { wordType, isAnswerRevealed, applyOptions };
 };
 
 export default useQuizOptions;

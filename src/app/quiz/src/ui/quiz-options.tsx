@@ -7,6 +7,7 @@ import { cn } from "@/utils/cn";
 import { SlidersHorizontal } from "lucide-react";
 import { useState } from "react";
 import { QUIZ_WORD_TYPE_LIST } from "../constants/quiz-options";
+import { LOCAL_STORAGE_KEY } from "@/constants/storage-key";
 
 export function QuizOptions() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -16,6 +17,7 @@ export function QuizOptions() {
   const [optionValues, setOptionValues] = useState({
     [SEARCH_PARAM_KEYS.WORD_TYPE]: wordType ?? "",
     [SEARCH_PARAM_KEYS.IS_ANSWER_REVEALED]: isAnswerRevealed,
+    isDefault: false,
   });
 
   const handleWordTypeChange = (type: string) => {
@@ -33,8 +35,24 @@ export function QuizOptions() {
     }));
   };
 
+  const toggleDefault = () => {
+    setOptionValues((prev) => ({
+      ...prev,
+      isDefault: !prev.isDefault,
+    }));
+  };
+
   const handleApplyOptions = () => {
-    applyOptions(optionValues);
+    const { isDefault, ...restOptionValues } = optionValues;
+
+    if (isDefault) {
+      localStorage.setItem(
+        LOCAL_STORAGE_KEY.QUIZ_OPTIONS,
+        JSON.stringify(restOptionValues),
+      );
+    }
+
+    applyOptions(restOptionValues);
     setIsDrawerOpen(false);
   };
 
@@ -69,7 +87,7 @@ export function QuizOptions() {
           </div>
 
           <div className="flex w-full flex-col gap-4">
-            <p className="text-base font-bold">풀이 옵션</p>
+            <p className="text-base font-bold">풀이 방식</p>
             <label
               className={cn(
                 "label w-full justify-between transition-colors duration-200",
@@ -88,6 +106,24 @@ export function QuizOptions() {
               />
             </label>
           </div>
+
+          <label
+            className={cn(
+              "label w-full justify-between text-base transition-colors duration-200",
+              {
+                "text-white":
+                  optionValues[SEARCH_PARAM_KEYS.IS_ANSWER_REVEALED],
+              },
+            )}
+          >
+            기본값으로 지정
+            <input
+              type="checkbox"
+              className="toggle"
+              checked={optionValues.isDefault}
+              onChange={toggleDefault}
+            />
+          </label>
 
           <button className="btn btn-lg" onClick={handleApplyOptions}>
             적용하기
