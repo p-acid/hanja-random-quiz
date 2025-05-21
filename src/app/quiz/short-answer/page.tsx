@@ -114,6 +114,7 @@ export default function ShortAnswerPage() {
         <button
           type="button"
           className="btn btn-lg btn-primary"
+          disabled={isRevealed}
           onClick={submitResult}
         >
           결과 확인하기

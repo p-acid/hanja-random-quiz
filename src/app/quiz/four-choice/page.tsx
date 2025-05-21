@@ -95,7 +95,11 @@ export default function FourChoicePage() {
           </div>
         </div>
 
-        <button className="btn btn-lg btn-primary" onClick={submitResult}>
+        <button
+          className="btn btn-lg btn-primary"
+          disabled={isRevealed}
+          onClick={submitResult}
+        >
           결과 확인하기
         </button>
       </div>
