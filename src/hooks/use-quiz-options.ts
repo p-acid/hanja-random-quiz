@@ -1,6 +1,6 @@
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
-import { QUIZ_WORD_TYPE } from "@/app/quiz/src/constants/quiz-options";
+import { QUIZ_WORD_TYPE } from "@/app/(protected)/quiz/src/constants/quiz-options";
 import { SEARCH_PARAM_KEYS } from "@/constants/search-params";
 import { LOCAL_STORAGE_KEY } from "@/constants/storage-key";
 import { createQueryString } from "@/utils/create-query-string";
