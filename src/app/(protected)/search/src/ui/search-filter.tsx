@@ -3,7 +3,7 @@
 import { ListFilter } from "lucide-react";
 import { useState } from "react";
 
-import { QUIZ_WORD_TYPE_LIST } from "@/app/quiz/src/constants/quiz-options";
+import { QUIZ_WORD_TYPE_LIST } from "@/app/(protected)/quiz/src/constants/quiz-options";
 import { Drawer } from "@/components/drawer";
 import { SEARCH_PARAM_KEYS } from "@/constants/search-params";
 import useSearchFilters from "@/hooks/use-search-filters";

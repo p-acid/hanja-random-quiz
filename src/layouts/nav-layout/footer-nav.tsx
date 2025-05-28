@@ -1,6 +1,6 @@
 "use client";
 
-import { Home, Search, SquarePen } from "lucide-react";
+import { CircleUser, Home, Search, SquarePen } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ReactNode } from "react";
@@ -15,10 +15,10 @@ const FOOTER_NAV_ITEMS: {
   matcher: (pathname: string) => boolean;
 }[] = [
   {
-    name: "홈",
-    icon: <Home className="size-5" />,
-    href: PAGE_ROUTES.HOME,
-    matcher: (pathname) => pathname === PAGE_ROUTES.HOME,
+    name: "검색",
+    icon: <Search className="size-5" />,
+    href: PAGE_ROUTES.SEARCH,
+    matcher: (pathname) => pathname === PAGE_ROUTES.SEARCH,
   },
   {
     name: "퀴즈",
@@ -27,10 +27,16 @@ const FOOTER_NAV_ITEMS: {
     matcher: (pathname) => pathname.includes(PAGE_ROUTES.QUIZ),
   },
   {
-    name: "검색",
-    icon: <Search className="size-5" />,
-    href: PAGE_ROUTES.SEARCH,
-    matcher: (pathname) => pathname === PAGE_ROUTES.SEARCH,
+    name: "홈",
+    icon: <Home className="size-5" />,
+    href: PAGE_ROUTES.HOME,
+    matcher: (pathname) => pathname === PAGE_ROUTES.HOME,
+  },
+  {
+    name: "내정보",
+    icon: <CircleUser className="size-5" />,
+    href: PAGE_ROUTES.MY_PAGE,
+    matcher: (pathname) => pathname.includes(PAGE_ROUTES.MY_PAGE),
   },
 ];
 
