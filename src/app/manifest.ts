@@ -4,7 +4,7 @@ import type { MetadataRoute } from "next";
 export default function manifest(): MetadataRoute.Manifest {
   return {
     name: SERVICE_METADATA.TITLE,
-    short_name: "HRQ",
+    short_name: "VOCA QUIZ",
     description: SERVICE_METADATA.DESCRIPTION,
     start_url: "/",
     display: "standalone",
