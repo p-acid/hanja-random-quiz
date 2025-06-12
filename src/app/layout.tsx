@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Noto_Sans_KR } from "next/font/google";
 
 import { CANONICAL_URL, SERVICE_METADATA } from "@/constants/service";
-import { MainLayout } from "@/layouts/main-layout";
 
 import "./globals.css";
 import { Providers } from "@/providers";
@@ -28,9 +27,7 @@ export default function RootLayout({
     <html lang="ko" className="h-full">
       <body className={`${notoSansKr.variable} bg-base-100 h-full antialiased`}>
         <Suspense>
-          <Providers>
-            <MainLayout>{children}</MainLayout>
-          </Providers>
+          <Providers>{children}</Providers>
         </Suspense>
       </body>
     </html>
