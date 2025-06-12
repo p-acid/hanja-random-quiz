@@ -4,8 +4,6 @@ export default async function MyPage() {
   const supabase = await createClient();
   const { data } = await supabase.auth.getUser();
 
-  console.log(data.user?.user_metadata);
-
   return (
     <div>
       <h1 className="text-xl font-bold">내 정보</h1>

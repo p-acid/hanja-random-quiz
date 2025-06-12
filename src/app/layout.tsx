@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import { Noto_Sans_KR } from "next/font/google";
+import { Suspense } from "react";
 
 import { CANONICAL_URL, SERVICE_METADATA } from "@/constants/service";
+import { Providers } from "@/providers";
 
 import "./globals.css";
-import { Providers } from "@/providers";
-import { Suspense } from "react";
 
 const notoSansKr = Noto_Sans_KR({
   variable: "--font-noto-sans-kr",

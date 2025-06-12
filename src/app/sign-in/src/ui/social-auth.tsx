@@ -1,10 +1,6 @@
-import { createClient } from "@/libs/supabase/server";
 import { socialSignIn } from "../actions/social-sign-in";
 
 export async function SocialAuth() {
-  const supabase = await createClient();
-  const user = await supabase.auth.getUser();
-  console.log(user);
   return (
     <form className="flex flex-col items-center justify-center gap-4">
       <button
